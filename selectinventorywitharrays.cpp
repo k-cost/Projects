@@ -20,7 +20,7 @@ int main () {
     std::cin >> menuSelect;
     if(menuSelect == 1){
         std::cout << "+-------------Potions-------------+" << std::endl;
-    for (int i = 0; i <5; i++){
+    for (int i = 0; i < sizeof(potions)/sizeof(std::string); i++){
         std::cout << potions[i] << std::endl;
     }
     }
@@ -28,7 +28,7 @@ int main () {
     std::cout << "\n";
     std::string weapons[5] = {"Great Sword", "Short Sword", "Axe", "Daggers", "Crossbow"};
     std::cout << "+-------------Weapons-------------+" <<std::endl; 
-    for (int i =0; i <5; i++){
+    for (int i =0; i < sizeof(weapons)/sizeof(std::string); i++){
         std::cout << weapons[i] << std::endl;
     }
     }
